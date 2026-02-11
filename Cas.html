@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Cadastro</title>
+        <link href="cadastro3.css" rel="stylesheet" type="text/css"/>
+        <script src="java2.js"></script>
+         </head>
+         <body>
+            <header id="header">
+            
+            
+                
+                <form id="form">
+                    <div>
+                </header>
+                <br>
+                <br>
+                <br>
+                <br>
+                <section id="conteiner">
+                <div class="field" id="individualfield" onclick="change1()">
+                <fieldset class="borda">
+                  <img class="img2" src="/joguinho/img/moeda.png" class="imagem3"/>
+                    <br>
+                    <div onclick="change1()">
+                    <label for="pag">Forma de pagamento:</label>
+                    <hr>
+                    <br>
+                    
+                        <label> <input type="radio" name="pag" value="individualradi" id="CARTAO">CARTÃO</label>
+                          <label> <input type="radio" name="pag" value="licensaradio" id="BOLETO">BOLETO </label>
+                          <label> <input type="radio" name="pag" value="individualradi" id="PIX" onclick="pix()">PIX</label>
+                          <br>  
+                
+                             </div>
+                          <div class="campos" id="campo1">
+                       
+                         <label>  Número Do Cartão    </label>
+                         <input type="text" name="campo1" id="numerodocartao">
+                         <br>
+                         <label> Vencimento do Cartão</label>
+                         <input type="date" name="data" id="data">
+                         <br>
+                         <label>Codigo De Segurança</label>
+                         <input type="text" id="codigo">
+                         <br>
+                         <hr>
+                         <label>PARCELAS</label>
+                         <br>
+                         <input type="number" id="numero" name="numero" onchange="juros()" min="1" max="12">
+                         <br>
+                         <button type="submit" class="butao"><a href="/Principal/principal.html" onclick="compra()">COMPRAR</a></button>
+
+
+                          </div>
+                          <div class="campos" id="campo3">
+                            <img class="img3" src="/joguinho/img/QRCode.png" alt="">
+                            <label for="copia"><p>Escaneie e Insira o Código</p></label>
+                            <input type="text" id="copia" name="copia">
+                            <br>
+                            <hr>
+                                  <button type="submit" class="butao"><a href="/Principal/principal.html" onclick="compra()">COMPRAR</a></button>
+                             
+                          </div>
+                          <div class="campos" id="campo2">
+                            <p>Pague com Boleto</p>
+                            <img class="img" src="/joguinho/img/boleto-logo-0.png" id="bole" name="bole">
+                            <br>
+                                  <button type="submit" class="butao"><a href="Principal/principal.html" onclick="compra()">FINALIZAR COMPRA</a></button>
+                          </div>
+                          
+                   
+                </fieldset>
+                </div>
+                
+                
+          
+         
